@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <param name="max_linear_speed" type="double" value="3" />
+    <param name="max_angular_speed" type="double" value="2" />
+
+    <node pkg="emotiv_ros" name="emotiv_server" type="command.py" output="screen"/>
+    <node pkg="emotiv_ros" name="emotiv_client" type="emotiv_client" output="screen"/>
+    <node pkg="turtlesim" name="turtlesim_node" type="turtlesim_node" output="screen" />
+</launch>
