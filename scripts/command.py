@@ -2,17 +2,16 @@
 from cortex import Cortex
 from emotiv_mc.msg import MentalCommand
 import rospy
-from std_msgs import msg
 
 user = {
     "license" : "",
-    "client_id" : "RrsVsnaGuPCnzOaXrvqCZkcDW40BabiLjQlCoudD",
-    "client_secret" : "HU9nA1ScWfsOGmqDsy1Kaoo1B3PRMjrnyFVfwlLvkGCelZeaiI8UOW9cqRciWQKsbhAkzoRGDkqsvR0EtlCHV5Bxt7h4HwbzPsWcfgar3S76b7qyoFxk9amMVuYepEfm",
+    "client_id" : "UflniJZQ2QGd19WpIVR9Wo9ZSVdcK5QfdBdQDqU1",
+    "client_secret" : "A6eh95rQQuHU0au507bk90zO1Vs1ug3NYe576PQbJuJZOw5VVjvMSd5913BznzsH2SfztrkPJBCDYrTMRXrWVKM9e0gtQ8Jj29moDmikeWl3u6LRQ37IQbAA3qeNPVki",
     "debit" : 100
 }
 
 # name of profile
-profile_name = 'samue'
+profile_name = 'pr2022'
 
 class Command():
 
@@ -60,7 +59,7 @@ class Command():
 #######################################################################
 
 def publish(data):
-        pub = rospy.Publisher('/mental_command', MentalCommand, queue_size=32)
+        pub = rospy.Publisher('/mental_command', MentalCommand, queue_size=1)
 
         if not rospy.is_shutdown():
             pub.publish(data)

@@ -7,7 +7,6 @@
 float maxLinearSpeed;
 float maxAngularSpeed;
 
-const std::string robotName = "turtlebot";
 ros::Publisher publisher;
 
 void MentalCommandCallback(const emotiv_ros::MentalCommand _command)
