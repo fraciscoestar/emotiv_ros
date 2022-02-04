@@ -5,8 +5,8 @@ import rospy
 
 user = {
     "license" : "",
-    "client_id" : "UflniJZQ2QGd19WpIVR9Wo9ZSVdcK5QfdBdQDqU1",
-    "client_secret" : "A6eh95rQQuHU0au507bk90zO1Vs1ug3NYe576PQbJuJZOw5VVjvMSd5913BznzsH2SfztrkPJBCDYrTMRXrWVKM9e0gtQ8Jj29moDmikeWl3u6LRQ37IQbAA3qeNPVki",
+    "client_id" : "XXXX",
+    "client_secret" : "XXXX",
     "debit" : 100
 }
 
